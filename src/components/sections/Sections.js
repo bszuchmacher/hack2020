@@ -7,6 +7,7 @@ import Facts from './Facts/Facts';
 import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 import MapMarker from './MapMarker/MapMarker';
+import TableContainer from '../Table/Table';
 
 import {CameraFeed} from '../Camerafeed/Camerafeed'
 
@@ -20,6 +21,7 @@ const sections = () => {
     <Fragment>
       <Home />
       <CameraFeed sendFile={uploadImage} />
+      <TableContainer/>
       <About />
       <Service />
       <Blog />

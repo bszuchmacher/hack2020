@@ -14,10 +14,10 @@ const footer = () => {
             <div className='footer-content'>
               <p>
                 <small className='text-muted'>
-                  Aenean suscipit eget mi act fermentum phasellus vulputate
-                  turpis tincidunt. Aenean suscipit eget. Aenean suscipit eget
-                  mi act fermentum phasellus vulputate turpis tincidunt. Aenean
-                  suscipit ege Aenean suscipit eget mi act fermentum phasellus.
+                3 Data Scientists and 4 FullStack Developers walk in a room....yeah, thats right...walk...because we are trying to not pollute the environment
+                We thought for a little bit: What hasnt been done yet in the realm of food....<br></br>We thought and thought and finally said: 
+                "Lets figure out a way to scan an item, type in an item or even take a pic of the item and get all the info from about the product to 
+                tracing the steps of the product!" It is a work in progress, but we kinda like it :)
                 </small>
               </p>
               <button className='btn btn-sm btn-primary rounded-0'>
@@ -58,17 +58,10 @@ const footer = () => {
             <div className='footer-content'>
               <p>
                 <small className='text-muted'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Water-based fuel: Electriq Global:
+                Founded in 2014, Electriq-Global Energy Solutions Ltd. develops an alternative fuel for the automotive industry that is composed of 60% water. Electriq Global’s technology extracts hydrogen from the water, harnessing it to create electric energy to power the vehicle. The company is based in northern Israeli town Tirat Carmel and Melbourne, Australia suburb Carlton. 
+                According to Electriq Global, its fuel delivers twice the range of other alternative fuels, is recyclable, and has zero emissions.
                 </small>
-              </p>
-              <p>
-                <small className='text-muted'>
-                  Pellentesque et pulvinar enim. Quisque at tempor ligula Natus
-                  error sit voluptatem
-                </small>
-              </p>
-              <p>
-                <small className='text-muted'>accusantium doloremque</small>
               </p>
             </div>
           </div>
@@ -78,13 +71,13 @@ const footer = () => {
             </div>
             <div className='footer-content'>
               <p className='text-muted'>
-                <small>Address : 123 main street, Algiers, Algeria</small>
+                <small>Address : 18 Shoken St TEL AVIV IL</small>
               </p>
               <p className='text-muted'>
-                <small>Phone : +213 (0) 123 456 789</small>
+                <small>Phone : 972.3.757.2703 </small>
               </p>
               <p className='text-muted'>
-                <small>E-mail : contact@email.com</small>
+                <small>E-mail :GreenEveryday@gmail.com</small>
               </p>
               <div className='social-media mt-4'>
                 <a href='!#' className='text-light'>
@@ -105,7 +98,7 @@ const footer = () => {
         </div>
       </div>
       <div className='bottom-footer pt-3 pb-3 text-center'>
-        <small>© All Right Reserved. Design By Mohamed Azouaoui</small>
+        <small>© All Right Reserved. Design By Da Green Goblins</small>
       </div>
     </footer>
   );

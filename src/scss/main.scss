@@ -14,12 +14,12 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import './partials/footer';
 @import './partials/camerafeed';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 // @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bitter', sans-serif;
 }
 .section-header {
   .section-title {
@@ -29,7 +29,7 @@ body {
     position: relative;
     margin-bottom: 2rem;
     span {
-      color: #248eff;
+      color: #6F9100;
     }
     &:after {
       content: '';
@@ -49,4 +49,28 @@ body {
     color: #6f6f6f;
     font-size: 0.9rem;
   }
+}
+.btn-primary {
+  color: #fff;
+  background-color: #98BF82;
+  border-color: #F2F23D;
+}
+.btn-light {
+  color: #212529;
+  background-color: #98BF82;
+  border-color: #F2F23D;
+}
+.text-light {
+  color:black;
+}
+
+button, input, optgroup, select, textarea {
+  color: #fff;
+  background-color: #98BF82;
+  border-color: #F2F23D;
+}
+.tableinfo{
+ margin: auto;
+ width: 50%;
+ padding-top: 5%;
 }

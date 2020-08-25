@@ -54,10 +54,19 @@ export class CameraFeed extends Component {
                 <div className="cameraviewer">
                     <video ref={ref => (this.videoPlayer = ref)} width="380" heigh="160" />
                 </div>
+                <br></br>
                 <button onClick={this.takePhoto}>Take photo!</button>
                 <div className="c-camera-feed__stage">
                     <canvas width="280" height="160" ref={ref => (this.canvas = ref)} />
                 </div>
+                <form>
+                <div className="form-group">
+                <label htmlFor="exampleFormControlFile">Upload Your Picture</label>
+                <br></br>
+                <br></br>
+                <input type="file" className="form-control-file"  id="exampleFormControlFile" style= {{display: "inline", marginleft: 40 }}/>
+            </div>
+            </form>
             </div>
             </div>
         );

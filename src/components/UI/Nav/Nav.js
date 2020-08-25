@@ -23,8 +23,13 @@ const Nav = () => {
     <nav className={`navbar navbar-expand-md bg-light ${navClass}`}>
       <div className='container'>
         <a className='navbar-brand' href='!#'>
-          <span>CARBON FOOTPRINT</span>
-          <i className='fas fa-circle ml-1' />
+        <i className='fas fa-shoe-prints mr-2'/>
+        <i className='fas fa-shoe-prints mr-2'/>
+        <i className='fas fa-shoe-prints mr-2'/>
+          <span>Green Goblins</span>
+          <i className='fas fa-shoe-prints ml-2'/>
+          <i className='fas fa-shoe-prints ml-2'/>
+          <i className='fas fa-shoe-prints ml-2'/>
         </a>
         <div
           className={`navbar-toggler nav-icon ${(() => {

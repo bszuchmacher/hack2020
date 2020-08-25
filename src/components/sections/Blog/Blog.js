@@ -2,9 +2,9 @@ import React from 'react';
 
 import Section from '../../../HOC/Section';
 
-import blogImage1 from '../../../assets/img/blog1.jpg';
-import blogImage2 from '../../../assets/img/blog2.jpg';
-import blogImage3 from '../../../assets/img/blog3.jpg';
+import blogImage1 from '../../../assets/img/foodonplate.jpg';
+import blogImage2 from '../../../assets/img/carbonfootprint.jpg';
+import blogImage3 from '../../../assets/img/greenglobe.jpg';
 
 const Blog = () => {
   return (
@@ -60,14 +60,12 @@ const Blog = () => {
                 <div className='card-body'>
                   <h5 className='card-title'>Closing Remarks</h5>
                   <p className='card-text'>
-                  <p className='card-text'>
                   Food is essential to life. It also forms an important part of our cultural identity, and plays an important role in the economy. 
                   People are aware that the food they eat is an important factor affecting their health, but what is less well known 
                   is the impact producing and consuming food has on the world's resources. 
                   Alongside the cars we drive and the energy we use to heat our houses, the food we produce and consume has a significant 
                   impact on the environment through, for example, greenhouse gas emissions, the use of land and water resources, pollution,
                   depletion of phosphorus, and the impact of chemical products such as herbicides and pesticides
-                  </p>
                   </p>
                   <a href='#!' className='btn btn-sm btn-primary'>
                     Read More

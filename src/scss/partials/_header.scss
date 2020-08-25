@@ -24,7 +24,7 @@
     }
     i {
       color: #248eff;
-      font-size: 0.5rem;
+      font-size: 12px;
     }
   }
   .navbar {
@@ -44,17 +44,17 @@
     color: #4e4e4e !important;
     font-size: 0.85rem;
     &:hover {
-      color: darken(#248eff, 6%) !important;
+      color: darken(#98BF82, 6%) !important;
     }
     &.active {
-      color: lighten(#248eff, 5%) !important;
+      color: lighten(#98BF82, 5%) !important;
     }
     @media (min-width: 768px) {
       padding: 1rem 1rem;
     }
   }
   .top-bar {
-    background-color: #2f4e72;
+    background-color: #292f35;
     display: none;
     @media (min-width: 768px) {
       display: block;

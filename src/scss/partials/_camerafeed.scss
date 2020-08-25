@@ -2,3 +2,8 @@
     text-align: center !important;
     border: 2px red;
 }
+
+.form-control-file, .form-control-range {
+    /* display: block; */
+    width: 20%;
+}
