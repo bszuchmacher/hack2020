@@ -13,7 +13,7 @@ const footer = () => {
             </div>
             <div className='footer-content'>
               <p>
-                <small className='text-muted'>
+                <small className='text-light'>
                 3 Data Scientists and 4 FullStack Developers walk in a room....yeah, thats right...walk...because we are trying to not pollute the environment
                 We thought for a little bit: What hasnt been done yet in the realm of food....<br></br>We thought and thought and finally said: 
                 "Lets figure out a way to scan an item, type in an item or even take a pic of the item and get all the info from about the product to 
@@ -57,7 +57,7 @@ const footer = () => {
             </div>
             <div className='footer-content'>
               <p>
-                <small className='text-muted'>
+                <small className='text-light'>
                 Water-based fuel: Electriq Global:
                 Founded in 2014, Electriq-Global Energy Solutions Ltd. develops an alternative fuel for the automotive industry that is composed of 60% water. Electriq Global’s technology extracts hydrogen from the water, harnessing it to create electric energy to power the vehicle. The company is based in northern Israeli town Tirat Carmel and Melbourne, Australia suburb Carlton. 
                 According to Electriq Global, its fuel delivers twice the range of other alternative fuels, is recyclable, and has zero emissions.
@@ -70,13 +70,13 @@ const footer = () => {
               <h6>Contact Us</h6>
             </div>
             <div className='footer-content'>
-              <p className='text-muted'>
+              <p className='text-light'>
                 <small>Address : 18 Shoken St TEL AVIV IL</small>
               </p>
-              <p className='text-muted'>
+              <p className='text-light'>
                 <small>Phone : 972.3.757.2703 </small>
               </p>
-              <p className='text-muted'>
+              <p className='text-light'>
                 <small>E-mail :GreenEveryday@gmail.com</small>
               </p>
               <div className='social-media mt-4'>

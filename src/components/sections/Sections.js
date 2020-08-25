@@ -9,18 +9,18 @@ import Contact from './Contact/Contact';
 import MapMarker from './MapMarker/MapMarker';
 import TableContainer from '../Table/Table';
 
-import {CameraFeed} from '../Camerafeed/Camerafeed'
+// import {CameraFeed} from '../Camerafeed/Camerafeed'
 
-const uploadImage = async file => {
-  const formData = new FormData();
-  formData.append('file', file);
-}
+// const uploadImage = async file => {
+//   const formData = new FormData();
+//   formData.append('file', file);
+// }
 
 const sections = () => {
   return (
     <Fragment>
       <Home />
-      <CameraFeed sendFile={uploadImage} />
+      {/* <CameraFeed sendFile={uploadImage} /> */}
       <TableContainer/>
       <About />
       <Service />

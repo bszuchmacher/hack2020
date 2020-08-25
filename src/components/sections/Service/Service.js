@@ -1,5 +1,7 @@
 import React from 'react';
-
+import blogImage4 from '../../../assets/img/facts_bg.jpg';
+import blogImage6 from '../../../assets/img/foodontable.jpg';
+import blogImage5 from '../../../assets/img/blog1.jpg';
 import Section from '../../../HOC/Section';
 
 const Service = () => {
@@ -11,7 +13,7 @@ const Service = () => {
             <span>Our </span>Services
           </h3>
           <h6 className='section-subtitle mr-auto ml-auto'>
-            When you trust the Green Goblins for your data info, its like a Hallmark Card, we do not dissappoint.
+            When you trust the Green Goblins for your data info, it's like trusting your family!
           </h6>
         </div>
         <div className='section-content'>
@@ -29,6 +31,7 @@ const Service = () => {
                   3) Make sure any meat and fish you eat is sustainably produced - if you can't find a trusted certification ask your supplier if they know where it came from <br></br>
                   4) Don’t eat types of fish which are over-harvested – shellfish and molluscs are great alternatives
                   </p>
+                  <img src={blogImage6} className='card-img-top' alt='Blog 2' />
                 </div>
               </div>
             </div>
@@ -40,11 +43,12 @@ const Service = () => {
                 <div className='service-body'>
                   <h5 className='service-title'>Risk Management</h5>
                   <p className='service-description'>
-                  1) We took the risk for you. Trust us to help you achieve your personal and environmental/sustainable needs.
+                  1) We took the risk for you. Trust us to help you achieve your personal and environmental/sustainable needs. <br></br>
                   2) In the past, consumers knew little about — or misunderstood — many sustainable practices. For their part, most food and beverage companies did little to help consumers understand. <br></br> 
                   3) But consumer interest has grown in how and where products are grown, processed, and distributed. And companies no longer have as much control over the distribution of information relating to their products as social media platforms have become a significant source of product information. <br></br>
                   4) As a result, consumers are inquiring about energy used to produce and transport a product, fair labor standards, chemicals used to grow and process a product, and waste streams.
                   </p>
+                  <img src={blogImage5} className='card-img-top' alt='Blog 2' />
                 </div>
               </div>
             </div>
@@ -61,6 +65,7 @@ const Service = () => {
                     2) Hit Search Button <br></br>
                     3) Information presented...just that easy <br></br>
                   </p>
+                  <img src={blogImage4} className='card-img-top' alt='Blog 2' />
                 </div>
               </div>
             </div>

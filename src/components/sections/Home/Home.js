@@ -13,7 +13,7 @@ const home = () => {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className='intro container text-center text-light'>
-            <h1 className='title'>Welcome To Our Website!</h1>
+            <h1 className='title'>גובלינים ירוקים</h1>
             <h2 className='sub-title mb-4'>
               This CO2 Project was made with love by: <br></br>
 

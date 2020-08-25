@@ -1,8 +1,9 @@
 footer {
-  background: #292f35;
+  background: lightseagreen;
   .footer-title {
     position: relative;
     margin-bottom: 2rem;
+    color: white;
     &:after {
       content: '';
       display: inline-block;
@@ -27,9 +28,9 @@ footer {
       font-size: 0.9rem;
       display: inline-block;
       padding: 0.3rem 0;
-      color: #6c757d !important;
+      color: white;
       &:hover {
-        color: lighten(#6c757d, 20%) !important;
+        color: lighten(black , 20%) !important;
       }
     }
   }
