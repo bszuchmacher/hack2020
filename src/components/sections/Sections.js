@@ -8,10 +8,18 @@ import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 import MapMarker from './MapMarker/MapMarker';
 
+import {CameraFeed} from '../Camerafeed/Camerafeed'
+
+const uploadImage = async file => {
+  const formData = new FormData();
+  formData.append('file', file);
+}
+
 const sections = () => {
   return (
     <Fragment>
       <Home />
+      <CameraFeed sendFile={uploadImage} />
       <About />
       <Service />
       <Blog />

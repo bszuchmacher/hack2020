@@ -11,9 +11,7 @@ const contact = () => {
             <span>Contact </span>Us
           </h3>
           <h6 className='section-subtitle mr-auto ml-auto'>
-            Individualized quality care that meets the total needs of the
-            patient Individualized quality care that quality care that
-            Individualized quality care that meets the total.
+            If our idea has sparked your interest...drop us a line!...We would love to hear from you, whether good or bad!!!!
           </h6>
         </div>
         <div className='section-content'>
