@@ -13,7 +13,6 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
 
-
 function CameraFeedNew(props) {
   const [dataUri, setDataUri] = useState("");
 
@@ -64,10 +63,9 @@ function CameraFeedNew(props) {
   }
   
   const rows = [
-    createData("1", "Israel", "Prigat Orange Juice", "Beverage", "Tel Aviv"),
-    createData("6", "USA", "Tropicana Orange Juice", "Beverage", "Brooklyn"),
-    createData("4", "Hungary", "Hungary's Best Orange Juice", "Beverage", "Sio"),
-    createData("2", "Jamaica", "Smokey's Orange Juice", "Beverage", "Kingston"),
+    createData("4", "Israel", "Prigat Orange Juice", "Beverage", "Givat Haim"),
+    createData("1", "Israel", "King Cole Black Beans", "Food", "Kibbutz Tzaara"),
+    createData("6", "Hungary", "Goulash", "Meal", "Sio"),
   ];
   
   const useStyles = makeStyles({
@@ -100,7 +98,7 @@ function CameraFeedNew(props) {
         <Camera 
         
           onTakePhotoAnimationDone={handleTakePhotoAnimationDone}
-        //   onTakePhoto={<TableContainer/>}
+          idealResolution = {{width:640, height:640 }}
           isFullscreen={isFullscreen}
           idealFacingMode={FACING_MODES.ENVIRONMENT}
           isImageMirror={false}
@@ -109,7 +107,7 @@ function CameraFeedNew(props) {
 
       <div style ={{display:"flex", flexDirection: "column", justifyContent: "center", alignItems:"center"}}>
        <button style={{ marginTop: "2%"}} onClick={refreshPage}>New Scan</button>
-       <button style={{ marginTop: "2%"}} >Get Info</button>
+       <button style={{ marginTop: "2%"}} type="button" data-toggle="collapse" data-target="#collapseTable" aria-expanded ="false" aria-controls ="collapseTable">Get Info</button>
        <div className="form-group" style ={{display:"flex", flexDirection: "column", justifyContent: "center", alignItems:"center"}}>
         {/* <label htmlFor="exampleFormControlFile" style={{marginTop: "4%"}}>Upload Your Picture</label> */}
         <br></br>
@@ -126,7 +124,7 @@ function CameraFeedNew(props) {
           </h6>
           </div>
         </div>
-        <div className="tableinfo" id="tableid">
+        <div className="tableinfo collapse" id="collapseTable" >
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="customized table">
           <TableHead>

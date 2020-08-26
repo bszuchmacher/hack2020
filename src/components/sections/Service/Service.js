@@ -13,7 +13,7 @@ const Service = () => {
             <span>Our </span>Services
           </h3>
           <h6 className='section-subtitle mr-auto ml-auto'>
-            When you trust the Green Goblins for your data info, it's like trusting your family!
+            When you trust the FoodPrint for your data info, it's like trusting your family!
           </h6>
         </div>
         <div className='section-content'>
@@ -60,7 +60,7 @@ const Service = () => {
                 <div className='service-body'>
                   <h5 className='service-title'>Market Research</h5>
                   <p className='service-description'>
-                    Us Goblins have researched the market for you, so all you have to do is:<br></br>
+                    At FoodPrint, we have researched the market for you, so all you have to do is:<br></br>
                     1) Snap a picture or Upload your picture <br></br>
                     2) Hit Search Button <br></br>
                     3) Information presented...just that easy <br></br>

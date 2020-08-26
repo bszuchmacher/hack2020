@@ -98,7 +98,7 @@ const footer = () => {
         </div>
       </div>
       <div className='bottom-footer pt-3 pb-3 text-center'>
-        <small>© All Right Reserved. Design By Da Green Goblins</small>
+        <small>© All Right Reserved. Design By Food Print</small>
       </div>
     </footer>
   );
