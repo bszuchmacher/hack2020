@@ -28,7 +28,7 @@ function Sections() {
       <Home />
       <br></br>
       <CameraFeedNew onHandleData ={(productData) => handleData(productData)}/>
-      <TableContainer productData= {data}/>
+      {/* <TableContainer productData= {data}/> */}
       <About />
       <Service />
       <Blog />

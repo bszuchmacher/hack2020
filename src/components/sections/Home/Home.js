@@ -13,12 +13,20 @@ const home = () => {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className='intro container text-center text-light'>
-            <h1 className='title'>גובלינים ירוקים</h1>
-            <h2 className='sub-title mb-4'>
-              This CO2 Project was made with love by: <br></br>
+            <i className='fas fa-shoe-prints mr-2'/>
+            <i className='fas fa-shoe-prints mr-2'/>
+            <i className='fas fa-shoe-prints mr-2'/>
+            <h1 className='title' >FoodPrint</h1>
+            <i className='fas fa-shoe-prints ml-2'/>
+            <i className='fas fa-shoe-prints ml-2'/>
+            <i className='fas fa-shoe-prints ml-2'/>
+            <br></br>
+            <br></br>
+            <h2 className='sub-title mb-4' style ={{fontSize: "22px"}} >
+            Scan your grocery product<br></br><br></br>Know your CO2 footprint
+            <br></br><br></br>
+            Consume smart <br></br>
 
-              FULLSTACK: Ben, Marta, Eduardo and Moshe <br></br>
-              DATA SCIENCE: Michael, Aviv and Nico
             </h2>
             <Link target='about' classes='btn btn-primary rounded-0 mr-2'>
               Learn More

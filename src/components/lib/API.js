@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "https://co2footprintrocks.herokuapp.com/"
+const baseUrl = "http://172.16.1.72:5000"
 
 export async function uploadPicture(file) {
   const response = await axios.post(`${baseUrl}/productpicture`, file);

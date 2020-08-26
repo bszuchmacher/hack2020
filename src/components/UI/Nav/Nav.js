@@ -26,7 +26,7 @@ const Nav = () => {
         <i className='fas fa-shoe-prints mr-2'/>
         <i className='fas fa-shoe-prints mr-2'/>
         <i className='fas fa-shoe-prints mr-2'/>
-          <span>Green Goblins</span>
+          <span>FoodPrint</span>
           <i className='fas fa-shoe-prints ml-2'/>
           <i className='fas fa-shoe-prints ml-2'/>
           <i className='fas fa-shoe-prints ml-2'/>
