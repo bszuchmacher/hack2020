@@ -6,4 +6,5 @@ export async function uploadPicture(file) {
   const response = await axios.post(`${baseUrl}/productpicture`, file);
   const productData = await response.data
   return productData
+  console.log(productData);
   }

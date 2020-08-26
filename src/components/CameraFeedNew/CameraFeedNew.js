@@ -15,6 +15,8 @@ import Paper from "@material-ui/core/Paper";
 
 function CameraFeedNew(props) {
   const [dataUri, setDataUri] = useState("");
+  const [productData, setProductData] = useState({})
+
 
   async function handleTakePhotoAnimationDone(dataUri) {
     setDataUri(dataUri);
@@ -26,7 +28,9 @@ function CameraFeedNew(props) {
     imagetoSend.type = "jpg";
     const productData = await uploadPicture(imagetoSend);
     console.log("productData", productData);
-    props.onHandleData(productData)
+    setProductData(productData)
+
+    
   }
 
    function refreshPage() {
@@ -63,9 +67,9 @@ function CameraFeedNew(props) {
   }
   
   const rows = [
-    createData("4", "Israel", "Prigat Orange Juice", "Beverage", "Givat Haim"),
+    createData("2", "Israel", "Prigat Orange Juice", "Beverage", "Givat Haim"),
     createData("1", "Israel", "King Cole Black Beans", "Food", "Kibbutz Tzaara"),
-    createData("6", "Hungary", "Goulash", "Meal", "Sio"),
+    createData("3", "Hungary", "Goulash", "Meal", "Sio"),
   ];
   
   const useStyles = makeStyles({
@@ -75,15 +79,22 @@ function CameraFeedNew(props) {
   });
   const classes = useStyles();
 
-  const whatToRender = (a) => {
-    if (a > 5) return "#F04141";
-    else if (a > 3) return "#F2F23D";
+//   const whatToRender = (a) => {
+//     if (a > 5) return "#F04141";
+//     else if (a > 3) return "#F2F23D";
+//     else return "#98BF82";
+//   };
+
+const whatToRender = (a) => {
+    if (a == 3) return "#F04141";
+    else if (a == 2) return "#F2F23D";
     else return "#98BF82";
   };
 
-
+  console.log("data for tabl", productData)
 
   return (
+      
     <div className='container pt-3'>
         <div className='section-header pt-5 text-center'>
           <h3 className='section-title'>
@@ -109,13 +120,9 @@ function CameraFeedNew(props) {
        <button style={{ marginTop: "2%"}} onClick={refreshPage}>New Scan</button>
        <button style={{ marginTop: "2%"}} type="button" data-toggle="collapse" data-target="#collapseTable" aria-expanded ="false" aria-controls ="collapseTable">Get Info</button>
        <div className="form-group" style ={{display:"flex", flexDirection: "column", justifyContent: "center", alignItems:"center"}}>
-        {/* <label htmlFor="exampleFormControlFile" style={{marginTop: "4%"}}>Upload Your Picture</label> */}
-        <br></br>
-        <br></br>
-        {/* <input type="file" className="form-control-file"  id="exampleFormControlFile"style ={{display:"flex", flexDirection: "column", justifyContent: "center", alignItems:"center"}} /> */}
         </div>
-        <div className='container pt-5'>
-        <div className='section-header pt-5 text-center'>
+        <div className='container pt-1'>
+        <div className='section-header pt-4 text-center'>
           <h3 className='section-title'>
             <span>Your </span>Product Info:
           </h3>
@@ -129,39 +136,31 @@ function CameraFeedNew(props) {
         <Table className={classes.table} aria-label="customized table">
           <TableHead>
             <TableRow>
-              <StyledTableCell>CO2 Eq Level per unit </StyledTableCell>
+              <StyledTableCell align="center">CO2 Eq Level per unit </StyledTableCell>
               <StyledTableCell align="center">City of Origin</StyledTableCell>
               <StyledTableCell align="center">
                 Product Type&nbsp;
               </StyledTableCell>
               <StyledTableCell align="center">Category&nbsp;</StyledTableCell>
-              <StyledTableCell align="center">
-                Traceability&nbsp;
-              </StyledTableCell>
+
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
-                
               <StyledTableRow
-                key={row.CO2_Level}
-                style={{ backgroundColor: whatToRender(row.CO2_Level) }}
-              >
+                key={productData.CO2_Level}
+                style={{ backgroundColor: whatToRender(productData.CO2_Level) }}>
                 <StyledTableCell component="th" scope="row" align="center">
-                  {row.CO2_Level}
+                  {productData.CO2_level}
                 </StyledTableCell>
                 <StyledTableCell align="center">
-                  {row.city_origin}
+                  {productData.city_origin}
                 </StyledTableCell>
                 <StyledTableCell align="center">
-                  {row.product_type}
+                  {productData.product_type}
                 </StyledTableCell>
-                <StyledTableCell align="center">{row.category}</StyledTableCell>
-                <StyledTableCell align="center">
-                  {row.traceability}
-                </StyledTableCell>
+                <StyledTableCell align="center">{productData.category}</StyledTableCell>
               </StyledTableRow>
-            ))}
+
           </TableBody>
         </Table>
       </TableContainer>

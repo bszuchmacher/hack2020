@@ -20,7 +20,7 @@ import CameraFeedNew from '../CameraFeedNew/CameraFeedNew'
 function Sections() {
   const [data,setData] = useState ({})
   function handleData (productData) {
-    console.log(productData)
+    // console.log(productData)
     setData(productData)
   }
   return (
