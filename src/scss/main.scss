@@ -28,6 +28,7 @@ body {
     font-family: 'Raleway', sans-serif;
     position: relative;
     margin-bottom: 2rem;
+    font-size: 36px;
     span {
       color: #6F9100;
     }
@@ -47,18 +48,20 @@ body {
   .section-subtitle {
     max-width: 700px;
     color: #6f6f6f;
-    font-size: 0.9rem;
+    font-size: 20px;
   }
 }
 .btn-primary {
   color: #fff;
   background-color: #98BF82;
   border-color: #F2F23D;
+  font-size: 24px;
 }
 .btn-light {
   color: #212529;
   background-color: #98BF82;
   border-color: #F2F23D;
+  font-size: 24px;
 }
 .text-light {
   color:black;
@@ -68,9 +71,20 @@ button, input, optgroup, select, textarea {
   color: #fff;
   background-color: #98BF82;
   border-color: #F2F23D;
+  font-size: 24px;
 }
 .tableinfo{
  margin: auto;
  width: 58%;
  padding-top: 5%;
+}
+
+p{
+  font-size: 20px;
+  line-height: 2.0;
+}
+.MuiTableCell-root {
+  display: table-cell;
+  padding: 16px;
+  font-size: 20px;
 }

@@ -14,7 +14,7 @@ const StyledTableCell = withStyles((theme) => ({
     color: theme.palette.common.white,
   },
   body: {
-    fontSize: 14,
+    fontSize: 20,
   },
 }))(TableCell);
 
@@ -45,7 +45,7 @@ const rows = [
 
 const useStyles = makeStyles({
   table: {
-    // width: 400,
+    font: 20
   },
 });
 
@@ -53,9 +53,9 @@ export default function CustomizedTables() {
   const classes = useStyles();
 
   const whatToRender = (a) => {
-    if (a > 5) return "red";
-    else if (a > 3) return "yellow";
-    else return "green";
+    if (a > 5) return "#F04141";
+    else if (a > 3) return "#F2F23D";
+    else return "#98BF82";
   };
 
   return (
@@ -77,6 +77,7 @@ export default function CustomizedTables() {
           </TableHead>
           <TableBody>
             {rows.map((row) => (
+                
               <StyledTableRow
                 key={row.CO2_Level}
                 style={{ backgroundColor: whatToRender(row.CO2_Level) }}

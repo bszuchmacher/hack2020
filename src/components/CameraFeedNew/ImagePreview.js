@@ -5,7 +5,7 @@ export const ImagePreview = ({ dataUri, isFullscreen }) => {
   let classNameFullscreen = isFullscreen ? "demo-image-preview-fullscreen" : "";
 
   return (
-    <div className={"demo-image-preview text-center" + classNameFullscreen}>
+    <div style ={{display:"flex", flexDirection: "column", justifyContent: "center", alignItems:"center"}} className={"demo-image-preview" + classNameFullscreen}>
       <img src={dataUri} />
     </div>
   );
